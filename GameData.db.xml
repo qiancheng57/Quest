@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<root version="1">
+	<table id="quests" size="8">
+		<row key="idsChGTH_15Comics_icon0">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon1">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon2">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon3_1">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon3_2">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon4">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon5">
+			<key value="active">
+				<bool value="true" />
+			</key>
+			<key value="completed">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon6_1">
+			<key value="active">
+				<bool value="true" />
+			</key>
+		</row>
+		<row key="idsChGTH_15Comics_icon6_2">
+			<key value="active">
+				<bool value="true" />
+			</key>
+		</row>
+	</table>
+</root>

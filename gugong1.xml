@@ -1,0 +1,923 @@
+<xml>
+	<chapter id="gugong1">
+		<day id="day1">
+			<!--1 день-->
+			<!-- <quest id="idsCHIDS15Q00_OpenExpansion" title="QuestTitle_OpenNextExpansion" buttonTitle="QuestButton_OpenNextExpansion" icon="icon_key" progressWeight="0">
+				<CompleteState>
+					<history id="0_Callbuytools"/>
+					<camera x="6531" y="1365"/>
+					<ostin x="6531" y="1359" arrow="1" animation="O_Stay"/>
+					<opens chapter="cluster_ids_gugong_base" how="3"/>
+				</CompleteState>
+			</quest> -->
+			<quest id="idsChGTH_15Comics_icon0" icon="Gugong_task_040" title="idsChGTH_15ComicsTitle_icon0" buttonTitle="idsChGTH_15ComicsButtonTitle_icon1" progressWeight="0">
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest"/>
+					<camera x="6794" y="1373"/>
+					<!-- <history id="00_Start3_GuGong"/> -->
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon1" icon="Gugong_task_040" title="idsChGTH_15ComicsTitle_icon1" buttonTitle="idsChGTH_15ComicsButtonTitle_icon1" progressWeight="1">
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest1"/>
+					<camera x="6794" y="1373"/>
+					<history id="1_Callbuytools"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon2" icon="Gugong_task_041" title="idsChGTH_15ComicsTitle_icon2" buttonTitle="idsChGTH_15ComicsButtonTitle_icon2" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon1"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest2"/>
+					<camera x="7055" y="1840"/>
+					<history id="2_Receivetools"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon3_1" icon="Gugong_task_019" title="idsChGTH_15ComicsTitle_icon3_1" buttonTitle="idsChGTH_15ComicsButtonTitle_icon3" progressWeight="1" group="idsChGTH_15Comics_icon3">
+				<require quest="idsChGTH_15Comics_icon2"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest3_1"/>
+					<camera x="6819" y="1746"/>
+					<history id="3_1PlantTrees"/>
+				</CompleteState>
+				<GroupCompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest3"/>
+					<camera x="6819" y="1746"/>
+					<history id="3_1PlantTrees2"/>
+				</GroupCompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon3_2" icon="Gugong_task_019" title="idsChGTH_15ComicsTitle_icon3_2" buttonTitle="idsChGTH_15ComicsButtonTitle_icon3" progressWeight="1" group="idsChGTH_15Comics_icon3">
+				<require quest="idsChGTH_15Comics_icon2"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest3_2"/>
+					<camera x="6850" y="1537"/>
+					<history id="3_2PlantTrees"/>
+				</CompleteState>
+				<GroupCompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest3"/>
+					<camera x="6850" y="1537"/>
+					<history id="3_2PlantTrees2"/>
+				</GroupCompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon4" icon="Gugong_task_032" title="idsChGTH_15ComicsTitle_icon4" buttonTitle="idsChGTH_15ComicsButtonTitle_icon4" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon3_2"/>
+				<require quest="idsChGTH_15Comics_icon3_1"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest4"/>
+					<camera x="6704" y="1599"/>
+					<history id="4_CallShopBrick"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon5" icon="Gugong_task_031" title="idsChGTH_15ComicsTitle_icon5" buttonTitle="idsChGTH_15ComicsButtonTitle_icon5" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon4"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest5"/>
+					<camera x="6759" y="1595"/>
+					<history id="5_CleanFloor"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon6_1" icon="Gugong_task_014" title="idsChGTH_15ComicsTitle_icon6_1" buttonTitle="idsChGTH_15ComicsButtonTitle_icon6" progressWeight="1" group="idsChGTH_15Comics_icon6">
+				<require quest="idsChGTH_15Comics_icon5"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="MainTile" step="Fix3"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest6_1"/>
+					<camera x="6704" y="1599"/>
+					<history id="6_1RepairFloor"/>
+				</CompleteState>
+				<GroupCompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest6"/>
+					<camera x="6704" y="1599"/>
+					<history id="6_1RepairFloor2"/>
+				</GroupCompleteState>
+				<effect value="RestorationFence.restorationfence3" pos="tile=138,56" delay="0.2" fadeTime="0.5" unfadeTime="1" time="0" looped="true" uLeft="-95" uRight="8" xMin="51" yMin="47" zMin="61" xMax="121" yMax="121" zMax="161" sound="Anim_mending_fences">
+					<IsoOffset x="-15.5" y="-14.5" z="0"/>
+				</effect>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon6_2" icon="Gugong_task_025" title="idsChGTH_15ComicsTitle_icon6_2" buttonTitle="idsChGTH_15ComicsButtonTitle_icon6" progressWeight="1" group="idsChGTH_15Comics_icon6">
+				<require quest="idsChGTH_15Comics_icon5"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest6_2"/>
+					<camera x="6704" y="1599"/>
+					<history id="6_2RepairFloor"/>
+				</CompleteState>
+				<GroupCompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest6"/>
+					<camera x="6704" y="1599"/>
+					<history id="6_2RepairFloor2"/>
+				</GroupCompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon7" icon="Gugong_task_027" title="idsChGTH_15ComicsTitle_icon7" buttonTitle="idsChGTH_15ComicsButtonTitle_icon7" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon6_1"/>
+				<require quest="idsChGTH_15Comics_icon6_2"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest7"/>
+					<camera x="6716" y="1665"/>
+					<history id="7_CheckIntroduction"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon8" icon="Gugong_task_040" title="idsChGTH_15ComicsTitle_icon8" buttonTitle="idsChGTH_15ComicsButtonTitle_icon8" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon7"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest8"/>
+					<camera x="6821" y="1728"/>
+					<history id="8_CallShopWall"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon9_1" icon="Gugong_task_023" title="idsChGTH_15ComicsTitle_icon9_1" buttonTitle="idsChGTH_15ComicsButtonTitle_icon9" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon8"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest9_1"/>
+					<camera x="6642" y="1640"/>
+					<history id="9_1PaintPavilion"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon9_2" icon="Gugong_task_024" title="idsChGTH_15ComicsTitle_icon9_2" buttonTitle="idsChGTH_15ComicsButtonTitle_icon9" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon8"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest9_2"/>
+					<camera x="7138" y="1374"/>
+					<history id="9_2CleanPavilion"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon10_1" icon="Gugong_task_023" title="idsChGTH_15ComicsTitle_icon10_1" buttonTitle="idsChGTH_15ComicsButtonTitle_icon10" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon9_1"/>
+				<CompleteState>
+					<!-- <luaRepair luaId="main" id="QuestIcon1" step="quest10_1"/> -->
+					<camera x="6642" y="1640"/>
+					<history id="10_1RepairPavilion"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon10_2" icon="Gugong_task_024" title="idsChGTH_15ComicsTitle_icon10_2" buttonTitle="idsChGTH_15ComicsButtonTitle_icon10" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon9_2"/>
+				<CompleteState>
+					<!-- <luaRepair luaId="main" id="QuestIcon2" step="quest10_2"/> -->
+					<camera x="7138" y="1374"/>
+					<history id="10_2RepairPavilion"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon11" icon="Gugong_task_038" title="idsChGTH_15ComicsTitle_icon11" buttonTitle="idsChGTH_15ComicsButtonTitle_icon11" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon10_1"/>
+				<require quest="idsChGTH_15Comics_icon10_2"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest11"/>
+					<camera x="6834" y="1447"/>
+					<history id="11_SearchRepairBurner"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon12" icon="Gugong_task_022" title="idsChGTH_15ComicsTitle_icon12" buttonTitle="idsChGTH_15ComicsButtonTitle_icon12" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon11"/>
+				<StartedState>
+					<luaRepair luaId="main" id="BigBurner" step="Fix2"/>
+					<history id="12_RepairBurner_Started"/>
+					<camera x="6618" y="1299"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="BigBurner" step="Fix3"/>
+					<camera x="6618" y="1299"/>
+					<!-- <effect id="stop"/>
+					<effect id="FS_12"/>
+					<effect id="FS_12_1"/> -->
+					<history id="12_RepairBurner_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="BigBurner" step="Fix4" editable="true"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest12"/>
+					<camera x="6618" y="1299"/>
+					<effect id="stop"/>
+					<effect id="CS_12"/>
+					<effect id="CS_12_1"/>
+					<history id="12_RepairBurner_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6611" y="1200"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Ostin" emotion="Idea" title="RepairBurner_Info" text="RepairBurner_Msg"/>
+					<okShift x="6611" y="1200"/>
+					<tapRect x="6611" y="1200" width="100" height="100"/>
+				</progress>
+				<effect value="Gugong_FountainFence.Start1" pos="tile=128,59" fadeTime="0" unfadeTime="0" looped="false" time="2" uLeft="31" uRight="101" xMax="162" yMax="81" zMax="175" xMin="66" yMin="24" zMin="111">
+					<IsoOffset x="-167" y="-121" z="-182"/>
+				</effect>
+				<effect value="Gugong_FountainFence.Start2" pos="tile=128,57" fadeTime="0.25" unfadeTime="0" looped="false" time="2" uLeft="31" uRight="101" xMax="354" yMax="362" zMax="281" xMin="201" yMin="257" zMin="166">
+					<IsoOffset x="-238" y="-121" z="-238"/>
+				</effect>
+				<effect value="Gugong_FountainFence.Stop1" pos="tile=128,59" fadeTime="0.25" unfadeTime="0" looped="true" time="0" delay="2" uLeft="31" uRight="101" xMax="102" yMax="116" zMax="107" xMin="29" yMin="83" zMin="103">
+					<IsoOffset x="-167" y="-117" z="-178"/>
+				</effect>
+				<effect value="Gugong_FountainFence.Stop2" pos="tile=128,57" fadeTime="0.25" unfadeTime="1" looped="true" time="0" delay="2" uLeft="31" uRight="101" xMax="354" yMax="331" zMax="293" xMin="190" yMin="280" zMin="143">
+					<IsoOffset x="-241" y="-120" z="-238"/>
+				</effect>
+				<effect value="Gugong_FountainFence.Workers" pos="tile=128,61" fadeTime="0.25" unfadeTime="0" looped="true" time="0" delay="2" uLeft="90" uRight="114" xMin="-69" yMin="-62" zMin="-95" xMax="56" yMax="20" zMax="-5" sound="gugongConcrete_mixer1,gugongConcrete_mixer2,gugongConcrete_mixer3">
+					<IsoOffset x="0" y="49" z="69"/>
+				</effect>
+				<effect id="FS_12" value="Gugong_FountainFence.Stop1" pos="tile=128,59" fadeTime="0.25" unfadeTime="0" looped="true" time="0" uLeft="31" uRight="101" xMax="129" yMax="114" zMax="115" xMin="31" yMin="49" zMin="103" sound="gugongFigurinesStarted">
+					<IsoOffset x="-167" y="-118" z="-182"/>
+				</effect>
+				<effect id="FS_12_1" value="Gugong_FountainFence.Stop2" pos="tile=128,57" fadeTime="0.25" unfadeTime="1" looped="true" time="0" uLeft="31" uRight="101" xMax="269" yMax="257" zMax="182" xMin="140" yMin="219" zMin="78" sound="gugongFigurinesStarted">
+					<IsoOffset x="-241" y="-120" z="-238"/>
+				</effect>
+				<effect id="CS_12" value="Gugong_FountainFence.End1" pos="tile=128,59" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="31" uRight="101" xMax="-6" yMax="28" zMax="107" xMin="-37" yMin="-13" zMin="103" zOrder="1">
+					<IsoOffset x="-167" y="-115" z="-138"/>
+				</effect>
+				<effect id="CS_12_1" value="Gugong_FountainFence.End2" pos="tile=130,55" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="31" uRight="101" xMax="215" yMax="219" zMax="182" xMin="128" yMin="199" zMin="78" sound="gugongFigurinesStarted" zOrder="1">
+					<IsoOffset x="-241" y="-120" z="-238"/>
+				</effect>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon13" icon="Gugong_task_027" title="idsChGTH_15ComicsTitle_icon13" buttonTitle="idsChGTH_15ComicsButtonTitle_icon13" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon12"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest13"/>
+					<camera x="6733" y="1515"/>
+					<history id="13_CallIncinerator"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon14" icon="Gugong_task_021" title="idsChGTH_15ComicsTitle_icon14" buttonTitle="idsChGTH_15ComicsButtonTitle_icon14" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon13"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest13"/>
+					<camera x="6817" y="1391"/>
+					<history id="14_PlaceIncinerator"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon15" icon="Gugong_task_034" title="idsChGTH_15ComicsTitle_icon15" buttonTitle="idsChGTH_15ComicsButtonTitle_icon15" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon14"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest15"/>
+					<camera x="7282" y="1454"/>
+					<history id="15_CutdownTree"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon16" icon="Gugong_task_026" title="idsChGTH_15ComicsTitle_icon16" buttonTitle="idsChGTH_15ComicsButtonTitle_icon16" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon15"/>
+				<StartedState>
+					<luaRepair luaId="main" id="TreeAltarUp" step="Fix3"/>
+					<history id="16_UprootStump_Started"/>
+					<camera x="7000" y="1500"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="TreeAltarUp" step="Fix4"/>
+					<camera x="7000" y="1500"/>
+					<effect id="stop"/>
+					<effect id="rightDust"/>
+					<effect id="rightEnd"/>
+					<effect id="rightStop"/>
+					<history id="16_UprootStump_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="TreeAltarUp" step="Fix5"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest16"/>
+					<camera x="7000" y="1500"/>
+					<effect id="stop"/>
+					<effect id="rightFinish"/>
+					<history id="16_UprootStump_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="7206" y="1523"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Robbie" emotion="Amazed" title="UprootStump_Info" text="UprootStump_Msg"/>
+					<okShift x="7206" y="1523"/>
+					<tapRect x="7206" y="1523" width="100" height="100"/>
+				</progress>
+				<sound value="gugongHammerSaw1,gugongHammerSaw2,gugongHammerSaw3" pos="tile=130,77" delay="1" looped="true" time="0" fadeTime="0.1" unfadeTime="0.1"/>
+				<effect value="Gugong_stumps2.Stamp3_work" pos="tile=149,62" fadeTime="0.6" unfadeTime="0" time="25" delay="0.3" looped="true" xMin="66" yMin="215" zMin="0" xMax="216" yMax="299" zMax="104">
+					<IsoOffset x="-32" y="-304" z="0"/>
+				</effect>
+				<effect value="Gugong_universal_dust.medium" pos="tile=146,59" unfadeTime="0.1" time="23" delay="10" looped="false" xMax="146" yMax="145" zMax="183" xMin="97" yMin="90" zMin="131" zOrder="3"/>
+				<effect value="Gugong_stumps2.Stamp3_work2" pos="tile=149,62" fadeTime="0.6" unfadeTime="1.3" time="25" delay="25" looped="true" xMin="183" yMin="280" zMin="145" xMax="293" yMax="408" zMax="164" zOrder="2">
+					<IsoOffset x="-15" y="-299" z="-9"/>
+				</effect>
+				<effect value="Gugong_universal_dust.medium" pos="tile=148,62" unfadeTime="1.1" delay="48" looped="false" xMax="50" yMax="50" zMax="100" xMin="-10" yMin="-10" zMin="0" zOrder="1"/>
+				<effect value="Gugong_stumps2.Stamp3_work3" pos="tile=149,62" fadeTime="0.2" unfadeTime="1" delay="50" time="0" looped="true" xMin="126" yMin="246" zMin="56" xMax="247" yMax="336" zMax="139">
+					<IsoOffset x="-18" y="-304" z="-15"/>
+				</effect>
+				<effect id="rightEnd" value="Gugong_stumps2.Stamp3_wFin" pos="tile=149,61" time="3.9" fadeTime="2" unfadeTime="0.5" xMin="137" yMin="244" zMin="100" xMax="241" yMax="343" zMax="133" uLeft="-74" uRight="0" looped="false" sound="gugongStumpUprooted">
+					<IsoOffset x="-6" y="-258" z="0"/>
+				</effect>
+				<effect id="rightDust" value="Gugong_universal_dust.medium" pos="tile=149,62" unfadeTime="0.1" looped="false" xMax="50" yMax="50" zMax="100" xMin="-10" yMin="-10" zMin="0" zOrder="1"/>
+				<effect id="rightStop" value="Gugong_stumps2.Stamp3_Pin" pos="tile=149,63" time="0" looped="false" fadeTime="0" delay="2.6" unfadeTime="0.15" xMin="35" yMin="106" zMin="0" xMax="181" yMax="328" zMax="33" uLeft="-29" uRight="0">
+					<IsoOffset x="-32" y="-324" z="2"/>
+				</effect>
+				<effect id="rightFinish" value="Gugong_stumps2.Stamp3_Pin_Fin" pos="tile=149,61" time="1" looped="false" sound="gugongRemove_trash" fadeTime="0" unfadeTime="0" xMin="25" yMin="152" zMin="0" xMax="217" yMax="352" zMax="78" zOrder="2">
+					<IsoOffset x="-47" y="-271" z="-9"/>
+				</effect>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon17" icon="Gugong_task_040" title="idsChGTH_15ComicsTitle_icon17" buttonTitle="idsChGTH_15ComicsButtonTitle_icon17" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon16"/>
+				<StartedState>
+					<luaRepair luaId="main" id="TreeAltarUp" step="Fix6"/>
+					<history id="17_RemoveTree_Started"/>
+					<camera x="7000" y="1500"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="TreeAltarUp" step="Fix7"/>
+					<camera x="7000" y="1500"/>
+					<effect id="stop"/>
+					<effect id="bangFinish"/>
+					<history id="17_RemoveTree_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="TreeAltarUp" step="Fix8"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest17"/>
+					<camera x="7000" y="1500"/>
+					<history id="17_RemoveTree_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="7206" y="1523"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Pilot" emotion="" title="RemoveTree_Info" text="RemoveTree_Msg"/>
+					<okShift x="7206" y="1523"/>
+					<tapRect x="7206" y="1523" width="100" height="100"/>
+				</progress>
+				<sound value="gugongHammerSaw1,gugongHammerSaw2,gugongHammerSaw3" pos="tile=130,77" delay="1" looped="true" time="0" fadeTime="0.1" unfadeTime="0.1"/>
+				<effect value="Gugong_Trees_Rop_Vert.TREE_3_Clean" pos="tile=149,62" fadeTime="0.6" unfadeTime="0" time="25" delay="0.3" looped="true" xMin="-15" yMin="347" zMin="0" xMax="71" yMax="505" zMax="104" sound="gugongEastRD_GoldenThree">
+					<IsoOffset x="119" y="-518" z="-12"/>
+				</effect>
+				<effect id="bangFinish" value="Gugong_Trees_Rop_Vert.T_Big_Rop_F" pos="tile=146,58" time="1" looped="false" sound="gugongRemove_trash" fadeTime="0" unfadeTime="0" xMin="-98" yMin="261" zMin="0" xMax="94" yMax="461" zMax="78" zOrder="1">
+					<IsoOffset x="26" y="-368" z="0"/>
+				</effect>
+				<!-- <effect value="Gugong_universal_dust.medium" pos="tile=148,62" unfadeTime="0.1" time="23" delay="10" looped="false" xMax="146" yMax="145" zMax="183" xMin="97" yMin="90" zMin="131" zOrder="3"/>
+				<effect value="Gugong_stumps2.Stamp3_work2" pos="tile=149,62" fadeTime="0.6" unfadeTime="1.3" time="25" delay="25" looped="true" xMin="183" yMin="280" zMin="145" xMax="293" yMax="408" zMax="164" zOrder="2">
+					<IsoOffset x="-93" y="-201" z="0"/>
+				</effect> -->
+			</quest>
+			<quest id="idsChGTH_15Comics_icon18" icon="Gugong_task_020" title="idsChGTH_15ComicsTitle_icon18" buttonTitle="idsChGTH_15ComicsButtonTitle_icon18" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon17"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest18"/>
+					<camera x="7376" y="1503"/>
+					<history id="18_PlantCentralTree"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon19" icon="Gugong_task_030" title="idsChGTH_15ComicsTitle_icon19" buttonTitle="idsChGTH_15ComicsButtonTitle_icon19" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon18"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest19"/>
+					<camera x="7319" y="1465"/>
+					<history id="19_PlantGrass"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon20" icon="Gugong_task_044" title="idsChGTH_15ComicsTitle_icon20" buttonTitle="idsChGTH_15ComicsButtonTitle_icon20" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon19"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest20"/>
+					<camera x="1124" y="168"/>
+					<history id="20_CallAkira"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon21" icon="Gugong_task_017" title="idsChGTH_15ComicsTitle_icon21" buttonTitle="idsChGTH_15ComicsButtonTitle_icon21" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon20"/>
+				<!-- <StartedState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix1"/>
+					<history id="16_UprootStump_Started"/>
+					<camera x="7910" y="922"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<camera x="6204" y="1702"/>
+					<effect id="stop"/>
+					<effect id="FS_3"/>
+					<history id="16_UprootStump_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState> -->
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest21"/>
+					<camera x="5970" y="2170"/>
+					<effect id="stop"/>
+					<effect id="CS_3"/>
+					<effect id="rightFinish"/>
+					<history id="21_CarveClaspStoneRight"/>
+				</CompleteState>
+				<!-- <progress fastFinishTime="3" percent="true">
+					<progressPos x="6918" y="1700"/>
+					<materialPos x="8375" y="1105"/>
+					<customer id="Robbie" emotion="NotSureMaterial" title="CH5Q13_BuildTreehouse_Info" text="CH5Q13_BuildTreehouse_Msg"/>
+					<okShift x="6918" y="1700"/>
+					<tapRect x="8172" y="1095" width="100" height="100"/>
+				</progress>
+				<effect value="Gugong_small_statues.NM_3" pos="tile=137,46" fadeTime="0" unfadeTime="0" looped="false" time="1" uLeft="45" uRight="54" xMin="9" yMin="11" zMin="-24" xMax="57" yMax="48" zMax="88">
+					<IsoOffset x="-57" y="-51" z="0"/>
+				</effect>
+				<effect value="Gugong_small_statues.NM_3_work" pos="tile=137,46" fadeTime="0.25" unfadeTime="0" looped="true" time="50" delay="1" xMax="62" yMax="130" zMax="88" xMin="1" yMin="11" zMin="-24" uLeft="45" uRight="68">
+					<IsoOffset x="-57" y="-51" z="0"/>
+				</effect>
+				<effect value="Gugong_universal_dust.big" pos="tile=137,46" fadeTime="0.25" unfadeTime="1" looped="true" time="0" delay="51" uLeft="90" uRight="114" xMin="-22" yMin="78" zMin="-51" xMax="40" yMax="127" zMax="58" zOrder="10">
+					<IsoOffset x="-66" y="-152" z="20"/>
+				</effect>
+				<effect value="Gugong_small_statues.NM_3_work2" pos="tile=137,46" fadeTime="0.25" unfadeTime="0.25" looped="true" time="0" delay="50" uLeft="45" uRight="54" xMin="7" yMin="-2" zMin="-23" xMax="54" yMax="108" zMax="105">
+					<IsoOffset x="-57" y="-51" z="0"/>
+				</effect>
+				<effect id="CS_3" value="Gugong_small_statues.complet_state3" pos="tile=137,46" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="71" uRight="104" xMin="-7" yMin="-5" zMin="1" xMax="53" yMax="77" zMax="109">
+					<IsoOffset x="-44" y="-51" z="-41"/>
+				</effect>
+				<effect id="FS_3" value="Gugong_small_statues.finish_state3" pos="tile=137,46" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="118" uRight="87" xMin="-13" yMin="-24" zMin="-35" xMax="27" yMax="97" zMax="81">
+					<IsoOffset x="-57" y="-51" z="0"/>
+				</effect>
+				<sound value="Shovel1,Shovel2,Shovel3" pos="tile=111,76" delay="0.6" looped="true" time="50" fadeTime="0.5" unfadeTime="0.5"/>
+				<sound value="Hammer1,Hammer2,Hammer3" pos="tile=111,76" delay="50%-unfadeTime" looped="true" time="0" fadeTime="0.5" unfadeTime="0.5"/> -->
+			</quest>
+			<quest id="idsChGTH_15Comics_icon22" icon="Gugong_task_018" title="idsChGTH_15ComicsTitle_icon22" buttonTitle="idsChGTH_15ComicsButtonTitle_icon22" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon21"/>
+				<!-- <StartedState>
+					<luaRepair luaId="main" id="RockRight" step="Fix1"/>
+					<history id="16_UprootStump_Started"/>
+					<camera x="7910" y="922"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState> -->
+				<CompleteState>
+					<camera x="6204" y="1702"/>
+					<effect id="stop"/>
+					<effect id="FS_1"/>
+					<history id="22_CarveClaspStoneLeft"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</CompleteState>
+				<!-- <CompleteState>
+					<luaRepair luaId="main" id="RockRight" step="Fix2"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest16"/>
+					<camera x="5970" y="2170"/>
+					<effect id="stop"/>
+					<effect id="CS_1"/>
+					<effect id="rightFinish"/>
+					<history id="16_UprootStump_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6918" y="1700"/>
+					<materialPos x="8375" y="1105"/>
+					<customer id="Robbie" emotion="NotSureMaterial" title="CH5Q13_BuildTreehouse_Info" text="CH5Q13_BuildTreehouse_Msg"/>
+					<okShift x="6918" y="1700"/>
+					<tapRect x="8172" y="1095" width="100" height="100"/>
+				</progress>
+				<effect value="Gugong_small_statues.NM_1" pos="tile=137,59" fadeTime="0" unfadeTime="0" looped="false" time="1" uLeft="31" uRight="101" xMax="40" yMax="32" zMax="67" xMin="-8" yMin="-10" zMin="-47">
+					<IsoOffset x="-44" y="-60" z="0"/>
+				</effect>
+				<effect value="Gugong_small_statues.NM_1_work" pos="tile=137,59" fadeTime="0.25" unfadeTime="0" looped="true" time="50" xMax="33" yMax="39" zMax="42" xMin="-40" yMin="-102" zMin="-47" uLeft="138" uRight="103">
+					<IsoOffset x="-40" y="-54" z="0"/>
+				</effect>
+				<effect value="Gugong_universal_dust.big" pos="tile=137,59" fadeTime="0.25" unfadeTime="1" looped="true" time="0" delay="50" uLeft="90" uRight="114" xMin="-22" yMin="70" zMin="-51" xMax="40" yMax="119" zMax="58" zOrder="1">
+					<IsoOffset x="-66" y="-165" z="0"/>
+				</effect>
+				<effect value="Gugong_small_statues.NM_1_work2" pos="tile=137,59" fadeTime="0.25" unfadeTime="0" looped="true" time="0" delay="50" uLeft="90" uRight="114" xMin="-22" yMin="-26" zMin="-51" xMax="40" yMax="23" zMax="58" zOrder="1">
+					<IsoOffset x="-43" y="-63" z="0"/>
+				</effect>
+				<effect id="CS_1" value="Gugong_small_statues.complet_state1" pos="tile=137,59" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="146" uRight="222" xMin="-56" yMin="-25" zMin="-48" xMax="-17" yMax="34" zMax="47">
+					<IsoOffset x="-25" y="-34" z="9"/>
+				</effect>
+				<effect id="FS_1" value="Gugong_small_statues.finish_state_1" pos="tile=137,59" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="73" uRight="189" xMin="-52" yMin="-89" zMin="-47" xMax="17" yMax="-7" zMax="52">
+					<IsoOffset x="-29" y="-43" z="-3"/>
+				</effect>
+				<sound value="Shovel1,Shovel2,Shovel3" pos="tile=95,66" delay="0.0" looped="true" time="50%+fadeTime" fadeTime="0.5" unfadeTime="0.5"/>
+				<sound value="Hammer1,Hammer2,Hammer3" pos="tile=95,66" delay="50%-unfadeTime" looped="true" time="0" fadeTime="0.5" unfadeTime="0.5"/> -->
+			</quest>
+			<quest id="idsChGTH_15Comics_icon23" icon="Gugong_task_016" title="idsChGTH_15ComicsTitle_icon23" buttonTitle="idsChGTH_15ComicsButtonTitle_icon23" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon22"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest23"/>
+					<camera x="6844" y="1422"/>
+					<history id="23_CallRepairQinan"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon24" icon="Gugong_task_036" title="idsChGTH_15ComicsTitle_icon24" buttonTitle="idsChGTH_15ComicsButtonTitle_icon24" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon23"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest24"/>
+					<camera x="6844" y="1422"/>
+					<history id="24_LookforDrawing"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon25" icon="Gugong_task_048" title="idsChGTH_15ComicsTitle_icon25" buttonTitle="idsChGTH_15ComicsButtonTitle_icon25" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon24"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest25"/>
+					<camera x="6794" y="1373"/>
+					<history id="25_PrepareforQinan"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon26" icon="Gugong_task_016" title="idsChGTH_15ComicsTitle_icon26" buttonTitle="idsChGTH_15ComicsButtonTitle_icon26" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon25"/>
+				<StartedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix1"/>
+					<history id="26_RepairQinanFoundation_Started"/>
+					<camera x="6974" y="1612"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix2"/>
+					<camera x="6974" y="1612"/>
+					<effect id="stop"/>
+					<history id="26_RepairQinanFoundation_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix2"/>
+					<camera x="6974" y="1612"/>
+					<effect id="hengFinish"/>
+					<effect id="shuFinish"/>
+					<history id="26_RepairQinanFoundation_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6868" y="1550"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Kolin" emotion="Default" title="RepairQinanFoundation_Info" text="RepairQinanFoundation_Msg"/>
+					<okShift x="6868" y="1550"/>
+					<tapRect x="6435" y="1550" width="100" height="100"/>
+				</progress>
+				<sound value="gugongHammer1,gugongHammer2,gugongHammer3" pos="tile=126,71" delay="0.0" looped="true" time="0" fadeTime="0.5" unfadeTime="0.5"/>
+				<effect value="Gugong_qianandian_diji.5_colin_build_gate_cycle" pos="tile=137,54" fadeTime="0.6" unfadeTime="0" time="3000" looped="true" xMin="-13" yMin="-12" zMin="0" xMax="45" yMax="30" zMax="65">
+					<IsoOffset x="-91" y="-66" z="-62"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.NM_work1" pos="tile=142,56" looped="true" fadeTime="0" unfadeTime="0" xMin="-119" yMin="374" zMin="-171" xMax="54" yMax="419" zMax="-131" time="3000" zOrder="1">
+					<IsoOffset x="-657" y="-1133" z="-553"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.Restoration_Man2" pos="tile=138,57" time="3000" looped="true" fadeTime="0" unfadeTime="0" xMin="138" yMin="45" zMin="64" xMax="168" yMax="72" zMax="133">
+					<IsoOffset x="-446" y="-532" z="-409"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.Restoration_machine" pos="tile=134,41" time="3000" looped="true" fadeTime="0" unfadeTime="0" xMin="57" yMin="44" zMin="0" xMax="81" yMax="45" zMax="68" zOrder="-5003">
+					<IsoOffset x="-11" y="39" z="121"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.Worker_restoration_1" pos="tile=130,63" time="3000" looped="true" fadeTime="0" unfadeTime="0" xMin="31" yMin="21" zMin="0" xMax="79" yMax="79" zMax="78" zOrder="-5003">
+					<IsoOffset x="-431" y="-374" z="48"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.Restoration_Kolin" pos="tile=129,63" time="3000" looped="true" fadeTime="0" unfadeTime="0" xMin="-3" yMin="46" zMin="0" xMax="24" yMax="79" zMax="78">
+					<IsoOffset x="-234" y="-647" z="23"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.Final_dust" pos="tile=137,46" delay="24" time="3" looped="true" fadeTime="0" unfadeTime="0" xMin="25" yMin="152" zMin="0" xMax="217" yMax="353" zMax="78">
+					<IsoOffset x="-13" y="108" z="0"/>
+				</effect>
+				<effect value="Gugong_qianandian_diji.Final_dustB" pos="tile=148,54" delay="24" time="3" looped="true" fadeTime="0" unfadeTime="0" xMin="25" yMin="152" zMin="0" xMax="217" yMax="352" zMax="78" zOrder="1">
+					<IsoOffset x="-55" y="-88" z="-68"/>
+				</effect>
+				<effect id="hengFinish" value="Gugong_qianandian_diji.Final_dust" pos="tile=137,48" time="1" looped="true" fadeTime="0" unfadeTime="0" xMin="25" yMin="152" zMin="0" xMax="217" yMax="353" zMax="78" sound="gugongTheaterD5SmokecarWork">
+					<IsoOffset x="-13" y="59" z="0"/>
+				</effect>
+				<effect id="shuFinish" value="Gugong_qianandian_diji.Final_dustB" pos="tile=148,54" time="1" looped="true" fadeTime="0" unfadeTime="0" xMin="25" yMin="152" zMin="0" xMax="217" yMax="352" zMax="78" sound="gugongTheaterD5SmokecarWork">
+					<IsoOffset x="-55" y="-88" z="-68"/>
+				</effect>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon27" icon="Gugong_task_033" title="idsChGTH_15ComicsTitle_icon27" buttonTitle="idsChGTH_15ComicsButtonTitle_icon27" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon26"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest27"/>
+					<camera x="6839" y="1518"/>
+					<history id="27_PaintQinan"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon28" icon="Gugong_task_016" title="idsChGTH_15ComicsTitle_icon28" buttonTitle="idsChGTH_15ComicsButtonTitle_icon28" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon27"/>
+				<StartedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix3"/>
+					<history id="28_RepairFirstEave_Started"/>
+					<camera x="6585" y="1691"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix4"/>
+					<camera x="6585" y="1691"/>
+					<effect id="stop"/>
+					<effect id="FS_28"/>
+					<history id="28_RepairFirstEave_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix4"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest28"/>
+					<camera x="6585" y="1691"/>
+					<effect id="stop"/>
+					<effect id="CS_28"/>
+					<history id="28_RepairFirstEave_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6547" y="1727"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Robbie" emotion="EmptyWink" title="RepairFirstEave_Info" text="RepairFirstEave_Msg"/>
+					<okShift x="6547" y="1727"/>
+					<tapRect x="6547" y="1727" width="100" height="100"/>
+				</progress>
+				<effect value="Gugong_qianandian_erlou.NM_work" pos="tile=134,53" fadeTime="0" unfadeTime="0" looped="false" time="1" uLeft="31" uRight="101" xMax="6" yMax="-25" zMax="110" xMin="-110" yMin="-92" zMin="-133" zOrder="-5003">
+					<IsoOffset x="-426" y="-150" z="-3"/>
+				</effect>
+				<effect value="Gugong_qianandian_erlou.NM_workB" pos="tile=131,53" fadeTime="0.25" unfadeTime="0" looped="true" time="0" delay="1" uLeft="31" uRight="101" xMax="6" yMax="-25" zMax="110" xMin="-110" yMin="-92" zMin="-133" zOrder="-5003">
+					<IsoOffset x="-501" y="-138" z="4"/>
+				</effect>
+				<effect value="Gugong_qianandian_erlou.A" pos="tile=147,51" fadeTime="0.25" unfadeTime="0" looped="true" time="100" xMax="33" yMax="39" zMax="42" xMin="-40" yMin="-102" zMin="-47" uLeft="138" uRight="103" zOrder="1">
+					<IsoOffset x="-16" y="-229" z="17"/>
+				</effect>
+				<effect value="Gugong_qianandian_erlou.B" pos="tile=148,52" fadeTime="0.25" unfadeTime="1" looped="true" time="120" uLeft="90" uRight="114" xMin="-22" yMin="70" zMin="-51" xMax="40" yMax="119" zMax="58" zOrder="-5003" delay="120">
+					<IsoOffset x="-7" y="-60" z="0"/>
+				</effect>
+				<effect value="Gugong_qianandian_erlou.C" pos="tile=150,49" fadeTime="0.25" unfadeTime="0" looped="true" time="0" delay="240" uLeft="90" uRight="114" xMin="-22" yMin="-26" zMin="-51" xMax="40" yMax="23" zMax="58" zOrder="2">
+					<IsoOffset x="129" y="-369" z="-128"/>
+				</effect>
+				<effect id="CS_28" value="Gugong_qianandian_erlou.yans" pos="tile=131,54" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="31" uRight="101" xMax="6" yMax="-25" zMax="110" xMin="-110" yMin="-92" zMin="-133">
+					<IsoOffset x="-250" y="-128" z="143"/>
+				</effect>
+				<effect id="FS_28" value="Gugong_qianandian_erlou.NM_workC" pos="tile=135,54" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="31" uRight="101" xMax="-8" yMax="-10" zMax="86" xMin="-124" yMin="-77" zMin="-157" sound="gugongTheaterD5SmokecarWork">
+					<IsoOffset x="-369" y="-159" z="-55"/>
+				</effect>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon29" icon="Gugong_task_046" title="idsChGTH_15ComicsTitle_icon29" buttonTitle="idsChGTH_15ComicsButtonTitle_icon29" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon28"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest29"/>
+					<camera x="6760" y="1597"/>
+					<history id="29_CallShopMaterials"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon30" icon="Gugong_task_016" title="idsChGTH_15ComicsTitle_icon30" buttonTitle="idsChGTH_15ComicsButtonTitle_icon30" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon29"/>
+				<StartedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix4"/>
+					<history id="30_RepairSecondEave_Started"/>
+					<camera x="6750" y="1921"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix5"/>
+					<camera x="6750" y="1921"/>
+					<effect id="stop"/>
+					<effect id="FS_30"/>
+					<history id="30_RepairSecondEave_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix5"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest30"/>
+					<camera x="6750" y="1921"/>
+					<effect id="stop"/>
+					<effect id="CS_30"/>
+					<effect id="rightFinish"/>
+					<history id="30_RepairSecondEave_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6672" y="1921"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Robbie" emotion="Cunning" title="RepairSecondEave_Info" text="RepairSecondEave_Msg"/>
+					<okShift x="6672" y="1921"/>
+					<tapRect x="6672" y="1921" width="100" height="100"/>
+				</progress>
+				<effect value="Gugong_dingluo.Bridge_5_fin" pos="tile=153,50" fadeTime="0" unfadeTime="0" looped="false" time="0" uLeft="45" uRight="54" xMin="9" yMin="11" zMin="-24" xMax="57" yMax="48" zMax="88" zOrder="1">
+					<IsoOffset x="-139" y="-657" z="0"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house4_Pin" pos="tile=154,47" fadeTime="0" unfadeTime="0" looped="true" time="0" delay="1" uLeft="45" uRight="54" xMin="9" yMin="110" zMin="-132" xMax="57" yMax="147" zMax="-102" zOrder="1">
+					<IsoOffset x="-107" y="-623" z="0"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house4_Pin2" pos="tile=152,49" fadeTime="0" unfadeTime="0" looped="true" time="0" delay="1" uLeft="45" uRight="54" xMin="9" yMin="130" zMin="-91" xMax="57" yMax="167" zMax="-60" zOrder="1">
+					<IsoOffset x="-129" y="-479" z="0"/>
+				</effect>
+				<effect value="Gugong_dingluo.Bridge_2" pos="tile=153,49" fadeTime="0.25" unfadeTime="0" looped="true" time="50" delay="1" xMax="121" yMax="216" zMax="36" xMin="60" yMin="135" zMin="-24" uLeft="45" uRight="68" zOrder="1">
+					<IsoOffset x="-24" y="-607" z="0"/>
+				</effect>
+				<effect value="Gugong_universal_dust.big" pos="tile=155,49" fadeTime="0.25" unfadeTime="1" looped="true" time="0" delay="51" uLeft="90" uRight="114" xMin="-22" yMin="78" zMin="-51" xMax="40" yMax="127" zMax="58" zOrder="10">
+					<IsoOffset x="113" y="-503" z="20"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house" pos="tile=153,51" fadeTime="0.25" unfadeTime="0.25" looped="true" time="0" delay="50" uLeft="54" uRight="45" xMin="87" yMin="17" zMin="-92" xMax="149" yMax="64" zMax="-9" zOrder="1" mirror="true">
+					<IsoOffset x="-211" y="-386" z="0"/>
+				</effect>
+				<effect id="CS_30" value="Gugong_universal_dust.big" pos="tile=152,50" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="71" uRight="104" xMin="-7" yMin="94" zMin="1" xMax="53" yMax="176" zMax="109" zOrder="1">
+					<IsoOffset x="-21" y="-569" z="-41"/>
+				</effect>
+				<effect id="FS_30" value="Gugong_dingluo.RobBri_Pin_Fin" pos="tile=155,49" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="118" uRight="87" xMin="7" yMin="60" zMin="-35" xMax="47" yMax="181" zMax="81" zOrder="1">
+					<IsoOffset x="-32" y="-570" z="0"/>
+				</effect>
+				<sound value="gugongShovel1,gugongShovel2,gugongShovel3" pos="tile=111,76" delay="0.6" looped="true" time="50" fadeTime="0.5" unfadeTime="0.5"/>
+				<sound value="gugongHammer1,gugongHammer2,gugongHammer3" pos="tile=111,76" delay="50%-unfadeTime" looped="true" time="0" fadeTime="0.5" unfadeTime="0.5"/>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon31" icon="Gugong_task_016" title="idsChGTH_15ComicsTitle_icon31" buttonTitle="idsChGTH_15ComicsButtonTitle_icon31" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon30"/>
+				<StartedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix5"/>
+					<history id="31_RepairQinanRoof_Started"/>
+					<camera x="6745" y="2102"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix6"/>
+					<camera x="6745" y="2102"/>
+					<effect id="stop"/>
+					<effect id="FS_31"/>
+					<history id="31_RepairQinanRoof_Finished"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="QinAnDian" step="Fix6"/>
+					<luaRepair luaId="main1" id="QuestIcon15" step="quest30"/>
+					<camera x="6745" y="2102"/>
+					<effect id="stop"/>
+					<effect id="CS_31"/>
+					<effect id="rightFinish"/>
+					<history id="31_RepairQinanRoof_Complete"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6679" y="2041"/>
+					<!-- <materialPos x="8375" y="1105"/> -->
+					<customer id="Robbie" emotion="Default" title="RepairQinanRoof_Info" text="RepairQinanRoof_Msg"/>
+					<okShift x="6679" y="2041"/>
+					<tapRect x="6679" y="2041" width="100" height="100"/>
+				</progress>
+				<effect value="Gugong_dingluo.Bridge_5_fin" pos="tile=153,50" fadeTime="0" unfadeTime="0" looped="false" time="3" uLeft="45" uRight="54" xMin="9" yMin="11" zMin="-24" xMax="57" yMax="48" zMax="88" zOrder="1">
+					<IsoOffset x="-136" y="-652" z="0"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house4_Pin" pos="tile=154,47" fadeTime="0" unfadeTime="0" looped="true" time="0" delay="1" uLeft="45" uRight="54" xMin="9" yMin="139" zMin="-132" xMax="57" yMax="176" zMax="-102" zOrder="1">
+					<IsoOffset x="-116" y="-605" z="0"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house4_Pin2" pos="tile=152,49" fadeTime="0" unfadeTime="0" looped="true" time="0" delay="1" uLeft="45" uRight="54" xMin="9" yMin="130" zMin="-91" xMax="57" yMax="167" zMax="-60" zOrder="1">
+					<IsoOffset x="-231" y="-545" z="0"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house2" pos="tile=153,49" fadeTime="0.25" unfadeTime="0" looped="true" time="50" delay="1" xMax="121" yMax="216" zMax="36" xMin="60" yMin="135" zMin="-24" uLeft="45" uRight="68" zOrder="1">
+					<IsoOffset x="-168" y="-633" z="0"/>
+				</effect>
+				<effect value="Gugong_universal_dust.big" pos="tile=155,49" fadeTime="0.25" unfadeTime="1" looped="true" time="0" delay="51" uLeft="90" uRight="114" xMin="-22" yMin="78" zMin="-51" xMax="40" yMax="127" zMax="58" zOrder="10">
+					<IsoOffset x="5" y="-530" z="20"/>
+				</effect>
+				<effect value="Gugong_dingluo.Dog_house" pos="tile=153,51" fadeTime="0.25" unfadeTime="0.25" looped="true" time="0" delay="50" uLeft="54" uRight="45" xMin="-64" yMin="20" zMin="-169" xMax="-2" yMax="67" zMax="-86" zOrder="1">
+					<IsoOffset x="-165" y="-646" z="-58"/>
+				</effect>
+				<effect id="CS_31" value="Gugong_universal_dust.big" pos="tile=152,50" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="71" uRight="104" xMin="-7" yMin="94" zMin="1" xMax="53" yMax="176" zMax="109" zOrder="1">
+					<IsoOffset x="-99" y="-572" z="-41"/>
+				</effect>
+				<effect id="FS_31" value="Gugong_dingluo.RobBri_Pin_Fin" pos="tile=155,49" fadeTime="0.25" unfadeTime="0.25" looped="false" time="0" uLeft="118" uRight="87" xMin="7" yMin="60" zMin="-35" xMax="47" yMax="181" zMax="81" zOrder="1">
+					<IsoOffset x="-32" y="-544" z="0"/>
+				</effect>
+				<sound value="gugongShovel1,gugongShovel2,gugongShovel3" pos="tile=111,76" delay="0.6" looped="true" time="50" fadeTime="0.5" unfadeTime="0.5"/>
+				<sound value="gugongHammer1,gugongHammer2,gugongHammer3" pos="tile=111,76" delay="50%-unfadeTime" looped="true" time="0" fadeTime="0.5" unfadeTime="0.5"/>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon32" icon="Gugong_task_040" title="idsChGTH_15ComicsTitle_icon32" buttonTitle="idsChGTH_15ComicsButtonTitle_icon32" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon31"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest32"/>
+					<camera x="6700" y="1594"/>
+					<history id="32_Callbuyburner"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon33" icon="Gugong_task_003" title="idsChGTH_15ComicsTitle_icon33" buttonTitle="idsChGTH_15ComicsButtonTitle_icon33" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon32"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest33"/>
+					<camera x="6840" y="1539"/>
+					<history id="33_ReceiveBurners"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon34" icon="Gugong_task_016" title="idsChGTH_15ComicsTitle_icon34" buttonTitle="idsChGTH_15ComicsButtonTitle_icon34" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon33"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest34"/>
+					<camera x="5970" y="2170"/>
+					<history id="34_ReplacePlaque"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon35" icon="Gugong_task_029" title="idsChGTH_15ComicsTitle_icon35" buttonTitle="idsChGTH_15ComicsButtonTitle_icon35" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon34"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest35"/>
+					<camera x="5970" y="2170"/>
+					<history id="35_QinanFinished"/>
+				</CompleteState>
+			</quest>
+			<!-- <quest id="idsChGTH_15Comics_icon36" icon="Gugong_task_015" title="idsChGTH_15ComicsTitle_icon36" buttonTitle="idsChGTH_15ComicsButtonTitle_icon36" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon35"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest36"/>
+					<camera x="6839" y="1518"/>
+					<history id="36_BackGateSides"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon37" icon="Gugong_task_015" title="idsChGTH_15ComicsTitle_icon37" buttonTitle="idsChGTH_15ComicsButtonTitle_icon37" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon36"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest37"/>
+					<camera x="6839" y="1518"/>
+					<history id="37_BackGateMain"/>
+				</CompleteState>
+			</quest>
+			<quest id="idsChGTH_15Comics_icon38" icon="Gugong_task_015" title="idsChGTH_15ComicsTitle_icon38" buttonTitle="idsChGTH_15ComicsButtonTitle_icon38" progressWeight="1">
+				<require quest="idsChGTH_15Comics_icon37"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="QuestIcon15" step="quest38"/>
+					<camera x="6839" y="1518"/>
+					<history id="38_BackGateTileRoof"/>
+				</CompleteState>
+			</quest> -->
+			<quest id="idsChGTH_15Comics_icon39" icon="Gugong_task_002" title="idsChGTH_15ComicsTitle_icon39" buttonTitle="idsChGTH_15ComicsButtonTitle_icon39" progressWeight="0">
+				<require quest="idsChGTH_15Comics_icon35"/>
+				<CompleteState>
+					<opens chapter="gugong2" how="2"/>
+				</CompleteState>
+			</quest>
+			<!-- <quest id="idsChGTH_15Comics_icon7" icon="FlameLily_notify" title="chGTH_ClearTrash2_Title" buttonTitle="QuestButton_OpenNextExpansion" progressWeight="1">
+				<StartedState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix2"/>
+					<history id="chSuyuan19_Start1"/>
+					<camera x="7910" y="922"/>
+					<ostin x="8040" y="975" arrow="1" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix1"/>
+					<camera x="6204" y="1702"/>
+					<effect id="stop"/>
+					<history id="chSuyuan19_Conversion1"/>
+					<ostin x="6363" y="1619" arrow="3"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix3"/>
+					<camera x="5970" y="2170"/>
+					<effect id="stop"/>
+					<effect id="COMPL"/>
+					<history id="chSuyuan19_Completed1"/>
+					<opens chapter="gugong2"/>
+				</CompleteState>
+				<progress fastFinishTime="3" percent="true">
+					<progressPos x="6918" y="1700"/>
+					<materialPos x="8375" y="1105"/>
+					<customer id="Robbie" emotion="DefaultMaterial" title="CH5Q13_BuildTreehouse_Info" text="CH5Q13_BuildTreehouse_Msg"/>
+					<okShift x="6918" y="1700"/>
+					<tapRect x="8172" y="1095" width="100" height="100"/>
+				</progress>
+				<require quest="idsChGTH_15Comics_icon6"/>
+				<sound value="AnimBuildFence" pos="tile=150,85" looped="true" time="0" fadeTime="0.1" unfadeTime="0.1"/>
+				<effect value="RestorationFence.restorationfence3" pos="tile=138,56" delay="0.2" fadeTime="0.5" unfadeTime="1" time="0" looped="true" uLeft="-95" uRight="8" xMin="51" yMin="47" zMin="61" xMax="121" yMax="121" zMax="161" sound="Anim_mending_fences">
+					<IsoOffset x="-15.5" y="-14.5" z="0"/>
+				</effect>
+			</quest> -->
+			<!-- <quest id="idsChGTH_15Comics_icon7" icon="FlameLily_notify" title="chGTH_ClearTrash2_Title" buttonTitle="QuestButton_OpenNextExpansion" progressWeight="1">
+				<StartedState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix2"/>
+					<camera x="7753" y="1250"/>
+					<history id="CH5Q13_BuildTreehouse1_Started"/>
+					<ostin x="7847" y="1207" arrow="3" animation="O_Stay"/>
+				</StartedState>
+				<FinishedState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix1"/>
+					<history id="CH5Q13_BuildTreehouse1_Finished"/>
+					<camera x="7753" y="1250"/>
+					<effect id="FIN2"/>
+					<effect id="FIN"/>
+					<ostin x="7828" y="1161" arrow="3" animation="O_Stay"/>
+				</FinishedState>
+				<CompleteState>
+					<luaRepair luaId="main" id="RockLeft" step="Fix3"/>
+					<camera x="7753" y="1250"/>
+					<ostin x="7828" y="1161" arrow="3" animation="O_Stay"/>
+					<effect id="COMPL"/>
+					<history id="CH5Q13_BuildTreehouse1_Complete"/>
+				</CompleteState>
+				<progress>
+					<progressPos x="7740" y="1477"/>
+					<customer id="Robbie" emotion="DefaultMaterial" title="CH5Q13_BuildTreehouse_Info" text="CH5Q13_BuildTreehouse_Msg"/>
+					<okShift x="7740" y="1477"/>
+					<shiftIPhone x="0" y="0"/>
+					<materialPos x="7740" y="1395"/>
+				</progress>
+				<effect value="Tree_HouseNewRepaired.const_1_1" pos="tile=146,72" time="5.8" delay="0" mirror="false" unfadeTime="0.0" fadeTime="0" looped="false" uLeft="94" uRight="50" xMin="86" yMin="306" zMin="0" xMax="318" yMax="524" zMax="297" sound="DnDBuildNewHouse01">
+					<IsoOffset x="-251.75" y="-393" z="7.25"/>
+				</effect>
+				<effect value="Tree_HouseNewRepaired.const_1_2" pos="tile=146,72" time="0.0" delay="5.8" mirror="false" unfadeTime="0" fadeTime="0" looped="true" uLeft="94" uRight="50" xMin="86" yMin="306" zMin="0" xMax="318" yMax="524" zMax="297" sound="DnDBuildNewHouse02">
+					<IsoOffset x="-251.75" y="-393" z="7.25"/>
+				</effect>
+				<effect value="Tree_HouseNewRepaired.const1Stat" pos="tile=146,72" time="0.0" delay="0" mirror="false" unfadeTime="0" fadeTime="1" looped="true" uLeft="133.0000000000000000" uRight="132.0000000000000000" xMin="86" yMin="306" zMin="0" xMax="253" yMax="454" zMax="180">
+					<IsoOffset x="-253.25" y="-393" z="6"/>
+				</effect>
+				<effect id="FIN" value="Tree_HouseNewRepaired.const_1_3a" pos="tile=146,72" time="0" delay="0" looped="false" mirror="false" unfadeTime="0.0" fadeTime="0.0" uLeft="72.7500000000000000" uRight="66.5000000000000000" xMin="86" yMin="306" zMin="0" xMax="336" yMax="549" zMax="297" sound="Anim_treehouse_step1_3">
+					<IsoOffset x="-251.75" y="-393" z="7.25"/>
+				</effect>
+				<effect id="FIN2" value="Tree_HouseNewRepaired.const1Stat" pos="tile=146,72" time="1" delay="0" mirror="false" unfadeTime="0" fadeTime="1.0" looped="false" uLeft="133.0000000000000000" uRight="132.0000000000000000" xMin="86" yMin="306" zMin="0" xMax="253" yMax="454" zMax="180" sound="Anim_treehouse_step1_3">
+					<IsoOffset x="-253.25" y="-393" z="6"/>
+				</effect>
+				<effect id="COMPL" value="Tree_HouseNewRepaired.const_1_4" pos="tile=146,72" time="0" delay="0" looped="false" mirror="false" unfadeTime="0.0" fadeTime="0.0" uLeft="81.5000000000000000" uRight="44.0000000000000000" xMin="86" yMin="306" zMin="0" xMax="336" yMax="549" zMax="297" sound="Anim_treehouse_step1_4">
+					<IsoOffset x="-251.75" y="-393" z="7.25"/>
+				</effect>
+				<require quest="idsChGTH_15Comics_icon6"/>
+			</quest> -->
+			<!-- 			<quest id="idsChGTH15_Material_Icon2" title="chGTH_SawnTree_Title" icon="icon_east_tree">
+				<require quest="idsChGTH15_Material_Icon1"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="Pavilion" step="New" editable="true" baseStep="Old" withJump="false"/>
+					<luaRepair luaId="main1" id="BigBurner" step="Old_First" editable="true" baseStep="Old" withJump="false"/>
+					<camera x="7131" y="2252"/>
+					<effect id="stop"/>
+					<history id="chSuyuan19_Start1"/>
+					<ostin x="7393" y="2239" arrow="3" animation="O_Chainsaw_Cut_Vert_Loop"/>
+					<dog x="7298" y="1195" arrow="7"/>
+					<flash id="Robbie" x="7858" y="1228" arrow="3" animation="P_Back_3"/>
+				</CompleteState>
+				<GroupCompleteState>
+					<luaRepair luaId="main" id="BigBurner" step="New"/>
+					<history id="chSuyuan19_LastBuying1"/>
+					<camera x="6932" y="962"/>
+					<ostin x="6695" y="1058" arrow="7" animation="O_Stay"/>
+				</GroupCompleteState>
+			</quest>
+			<quest id="idsChGTH15_Material_Icon3" title="chGTH_OutTree_Title" icon="icon_pilot">
+				<require quest="idsChGTH15_Material_Icon2"/>
+				<CompleteState>
+					<luaRepair luaId="main" id="BigTreeRuined" step="Removed"/>
+					<camera x="7152" y="2288"/>
+					<history id="chSuyuan19_LastBuying1"/>
+					<ostin x="7028" y="2276" arrow="0" animation="O_Nod_To_Player"/>
+				</CompleteState>
+			</quest> -->
+		</day>
+	</chapter>
+</xml>
